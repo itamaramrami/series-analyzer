@@ -177,19 +177,20 @@ namespace series_analyzer
 
         static void ShowSeriesSorted(int[] numbers)
         {
+            List<int> sortedNumbers = new List<int>(numbers);
             for (int i =0 ; i < numbers.Length - 1; i++)
             {
                 for (int j = i + 1; j < numbers.Length; j++)
                 {
                     if (numbers[i] > numbers[j])
                     {
-                        int temp = numbers[i];
-                        numbers[i] = numbers[j];
-                        numbers[j] = temp;
+                        int temp = sortedNumbers[i];
+                        sortedNumbers[i] = sortedNumbers[j];
+                        sortedNumbers[j] = temp;
                     }
                 }
             }
-            Console.WriteLine("The sorted series is: [" + string.Join(", ", numbers) + "]");
+            Console.WriteLine("The sorted series is: [" + string.Join(", ", sortedNumbers) + "]");
         }
 
         static void ShowMaxValue(int[] numbers)
