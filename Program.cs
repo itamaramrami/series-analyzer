@@ -161,7 +161,8 @@ namespace series_analyzer
 
         static void ShowSeries(int[] numbers)
         {
-          Console.WriteLine("The series is: " + string.Join(", ", numbers));
+            Console.WriteLine("The series is: [" + string.Join(", ", numbers) + "]");
+
         }
 
         static void ShowSeriesInReverse(int[] numbers)
@@ -171,7 +172,7 @@ namespace series_analyzer
             {
                 reversedNumbers.Add(numbers[i]);
             }
-            Console.WriteLine("The series in reverse order is: " + string.Join(", ", reversedNumbers));
+            Console.WriteLine("The series in reverse order is: [" + string.Join(", ", reversedNumbers)+ "]");
         }
 
         static void ShowSeriesSorted(int[] numbers)
@@ -188,7 +189,7 @@ namespace series_analyzer
                     }
                 }
             }
-            Console.WriteLine("The sorted series is: " + string.Join(", ", numbers));
+            Console.WriteLine("The sorted series is: [" + string.Join(", ", numbers) + "]");
         }
 
         static void ShowMaxValue(int[] numbers)
@@ -201,7 +202,7 @@ namespace series_analyzer
                     maxValue = numbers[i];
                 }
             }
-            Console.WriteLine("The maximum value is: " + maxValue);
+            Console.WriteLine("The maximum value is: [" + maxValue + "]") ;
         }
 
         static void ShowMinValue(int[] numbers) {
@@ -213,7 +214,7 @@ namespace series_analyzer
                     minValue = numbers[i];
                 }
             }
-            Console.WriteLine("The minimum value is: " + minValue);
+            Console.WriteLine("The minimum value is: [" + minValue + "]");
         }
 
         static void ShowAverageValue(int[] numbers) {
@@ -223,7 +224,7 @@ namespace series_analyzer
                 sum += numbers[i];
             }
             double average = sum / numbers.Length;
-            Console.WriteLine("The average value is: " + average);
+            Console.WriteLine("The average value is: [" + average + "]");
         }
         static void ShowCountOfValues(int[] numbers) {
             int sum = 0;
@@ -231,7 +232,7 @@ namespace series_analyzer
             {
                 sum += 1;
             }
-            Console.WriteLine("The count of values is: " + sum);
+            Console.WriteLine("The count of values is: [" + sum + "]");
         }
 
         static void ShowTotalAmount(int[] numbers) {
@@ -240,7 +241,7 @@ namespace series_analyzer
             {
                 total += numbers[i];
             }
-            Console.WriteLine("The total amount is: " + total);
+            Console.WriteLine("The total amount is: [" + total + "]");
         }
 
 
