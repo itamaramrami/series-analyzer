@@ -226,7 +226,12 @@ namespace series_analyzer
             Console.WriteLine("The average value is: " + average);
         }
         static void ShowCountOfValues(int[] numbers) {
-            Console.WriteLine("The number of values is: " + numbers.Length);
+            int sum = 0;
+            foreach (int number in numbers)
+            {
+                sum += 1;
+            }
+            Console.WriteLine("The count of values is: " + sum);
         }
 
         static void ShowTotalAmount(int[] numbers) {
