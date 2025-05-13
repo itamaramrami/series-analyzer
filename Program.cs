@@ -10,6 +10,7 @@ namespace series_analyzer
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("series analyzer");
             int choice;
             int[] numbers;
             if (!IsArgsValid(args))
